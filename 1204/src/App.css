@@ -1,3 +1,100 @@
-#root{
-    background-color: aqua;
+:root {
+    --magyar-piros: #E41D37;
+    --magyar-zold: #008751;
+    --semleges-feher: #FFFFFF;
+    --halvany-szurke: #F0F2F5;
+    --sotet-szurke: #333333;
+}
+
+body {
+    background-color: var(--halvany-szurke);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+#root {
+    background-color: var(--semleges-feher);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--sotet-szurke);
+    border-bottom: 3px solid var(--magyar-piros);
+    padding-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+p {
+    margin: 0;
+    color: var(--sotet-szurke);
+}
+
+#kezeloPanel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: var(--halvany-szurke);
+    border-radius: 8px;
+}
+
+#kezeloPanel p {
+    margin: 0 15px;
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--sotet-szurke);
+    min-width: 40px;
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+    font-family: inherit;
+    border: none;
+    transition: all 0.2s ease-in-out;
+}
+
+#kezeloPanel button {
+    margin: 0 10px;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--semleges-feher);
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#kezeloPanel button.up {
+    background-color: var(--magyar-piros);
+}
+
+#kezeloPanel button.down {
+    background-color: var(--magyar-zold);
+}
+
+#kezeloPanel button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+#kezeloPanel button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
