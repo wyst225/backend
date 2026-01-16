@@ -1,0 +1,98 @@
+/* Reset + alapok */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+/* App konténer */
+#root {
+  min-height: 100vh;
+}
+
+/* Navigáció */
+nav {
+  background-color: #1e293b;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+nav a {
+  color: #e5e7eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Gombok */
+button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+/* Belépés / kilépés gomb */
+.auth-button {
+  margin: 16px;
+  background-color: #2563eb;
+  color: white;
+}
+
+/* Oldalak */
+.page {
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 16px;
+}
+
+/* Products */
+.product {
+  background-color: white;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product button {
+  background-color: #16a34a;
+  color: white;
+}
+
+/* Cart */
+.cart-item {
+  background-color: white;
+  padding: 10px 14px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+}
+
+/* Üzenetek */
+.info {
+  color: #6b7280;
+  font-style: italic;
+}
